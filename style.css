@@ -171,7 +171,8 @@ header.scrolled .logo img {
 }
 
 #hero h1 span {
-    color: #059669; /* Darker emerald for better readability */
+    color: #10b981; /* Bright, vibrant green */
+    text-shadow: 0 2px 15px rgba(0,0,0,0.6);
 }
 
 #hero p {
