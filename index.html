@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MamoFresh | Premium Reinigungsservice Vechta</title>
+    <meta name="description" content="Professionelle Reinigung für Fitnessstudios, Büros und Gewerbe in Vechta & Umgebung. Höchste Qualität und Zuverlässigkeit.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">Mamo<span>Fresh</span></div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#contact" class="btn-primary">Angebot</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="animation-container">
+                <canvas id="scroll-animation"></canvas>
+            </div>
+            <div class="hero-content container">
+                <h1 class="fade-in">Premium Reinigung für Ihr Business</h1>
+                <p class="fade-in delay-1">Hygienische Sauberkeit auf höchstem Niveau in Vechta & Umgebung.</p>
+                <div class="hero-actions fade-in delay-2">
+                    <a href="#contact" class="btn-cta">Jetzt anfragen</a>
+                    <a href="#services" class="btn-secondary">Unsere Leistungen</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scrollen</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2 class="section-title">Unsere Leistungen</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">🏋️</div>
+                    <h3>Fitness & Sport</h3>
+                    <p>Spezialisierte Hygiene für Studios und Wellnessbereiche.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🏢</div>
+                    <h3>Büro & Gewerbe</h3>
+                    <p>Professionelle Reinigung für produktive Arbeitsumgebungen.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🛍️</div>
+                    <h3>Einzelhandel</h3>
+                    <p>Strahlende Verkaufsflächen für Ihre Kunden.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">⚡</div>
+                    <h3>Express Service</h3>
+                    <p>Schnelle Hilfe bei dringenden Reinigungseinsätzen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="bg-dark">
+            <div class="container grid-2">
+                <div class="content">
+                    <h2 class="section-title text-white">Warum MamoFresh?</h2>
+                    <ul class="features-list">
+                        <li>
+                            <strong>Erfahrung & Qualität:</strong> Jahrelange Expertise in der Gewerbereinigung.
+                        </li>
+                        <li>
+                            <strong>Zertifiziert & Versichert:</strong> Volle Sicherheit für Ihr Unternehmen.
+                        </li>
+                        <li>
+                            <strong>Umweltbewusst:</strong> Wir setzen auf ökologische Reinigungsmittel.
+                        </li>
+                        <li>
+                            <strong>Zuverlässig:</strong> Pünktlichkeit ist unsere oberste Priorität.
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-placeholder">
+                    <!-- Space for a future generated image -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Bereit für Frische?</h2>
+                    <p>Kontaktieren Sie uns für ein unverbindliches Angebot.</p>
+                    <div class="info-item">
+                        <span>📞</span>
+                        <a href="tel:+491727685602">0172 7685 602</a>
+                    </div>
+                    <div class="info-item">
+                        <span>✉️</span>
+                        <a href="mailto:info@mamo-fresh.com">info@mamo-fresh.com</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/491727685602" class="btn-whatsapp">WhatsApp Chat</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="E-Mail" required>
+                    <select>
+                        <option value="">Leistung wählen</option>
+                        <option value="fitness">Fitnessreinigung</option>
+                        <option value="office">Büroreinigung</option>
+                        <option value="retail">Einzelhandel</option>
+                        <option value="other">Sonstiges</option>
+                    </select>
+                    <textarea placeholder="Ihre Nachricht" rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Angebot anfordern</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Mamo<span>Fresh</span></div>
+            <div class="footer-links">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 MamoFresh. Made with ❤️ in Vechta.
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
