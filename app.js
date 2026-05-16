@@ -3,7 +3,7 @@ if (canvas) {
     const context = canvas.getContext("2d");
     const heroContent = document.querySelector('.hero-content');
 
-    const frameCount = 69;
+    const frameCount = 55; // Reduced from 69 for a snappier ending
     const currentFrame = index => (
         `frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
     );

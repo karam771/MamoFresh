@@ -125,7 +125,7 @@ header.scrolled .logo img {
 
 /* Hero Section */
 #hero {
-    height: 450vh; /* More space for scroll effects */
+    height: 250vh; /* Reduced from 450vh for a faster transition */
     position: relative;
 }
 
