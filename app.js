@@ -63,13 +63,6 @@ if (canvas) {
         );
 
         requestAnimationFrame(() => {
-            // Text Sync (Fade out and scale up slightly as we scroll down)
-            const textProgress = Math.min(1, progress / 0.4);
-            if (heroContent) {
-                heroContent.style.opacity = 1 - textProgress;
-                heroContent.style.transform = `translate3d(-50%, calc(-50% - ${textProgress * 50}px), 0) scale(${1 + textProgress * 0.1})`;
-            }
-            
             airbnb.frame = frameIndex;
             render();
         });

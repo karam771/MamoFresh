@@ -145,7 +145,7 @@ header.scrolled .logo img {
 }
 
 .hero-content {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -155,8 +155,6 @@ header.scrolled .logo img {
     width: 100%;
     padding: 0 2rem;
     pointer-events: none;
-    will-change: transform, opacity;
-    backface-visibility: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
