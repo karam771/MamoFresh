@@ -58,18 +58,18 @@ nav {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 60px;
-    width: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
     transition: var(--transition);
 }
 
-header.scrolled .logo img {
-    height: 45px;
+.logo span {
+    color: var(--secondary);
+}
+
+header.scrolled .logo {
+    font-size: 1.3rem;
 }
 
 .nav-links {
@@ -572,20 +572,19 @@ header.scrolled .logo img {
     padding: 2rem 0;
 }
 
-.partner-logo {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--text-light);
+.partner-image {
+    max-width: 140px;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
     opacity: 0.6;
+    filter: grayscale(100%);
     transition: var(--transition);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.partner-logo:hover {
+.partner-image:hover {
     opacity: 1;
-    color: var(--primary);
+    filter: grayscale(0%);
     transform: scale(1.1);
 }
 
