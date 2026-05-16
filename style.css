@@ -612,46 +612,6 @@ footer {
     color: var(--text-light);
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--white);
-    z-index: 10;
-}
-
-.mouse {
-    width: 20px;
-    height: 35px;
-    border: 2px solid var(--white);
-    border-radius: 20px;
-    margin-top: 10px;
-    position: relative;
-}
-
-.mouse::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background: var(--white);
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    animation: scroll 2s infinite;
-}
-
-@keyframes scroll {
-    0% { transform: translate(-50%, 0); opacity: 1; }
-    100% { transform: translate(-50%, 15px); opacity: 0; }
-}
-
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .grid-2, .contact-wrapper {
