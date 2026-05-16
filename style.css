@@ -309,6 +309,241 @@ nav {
     transition: var(--transition);
 }
 
+.image-container {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.img-responsive:hover {
+    transform: scale(1.05);
+}
+
+/* Subpages */
+.sub-hero {
+    padding: 10rem 0 6rem;
+    text-align: center;
+}
+
+.sub-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.sub-hero p {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Service Details */
+.service-detail-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.service-detail-block.reverse {
+    direction: rtl;
+}
+
+.service-detail-block.reverse .service-text {
+    direction: ltr;
+}
+
+.service-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.service-text ul {
+    list-style: none;
+}
+
+.service-text li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.service-text li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+/* Reviews Wall */
+#reviews-wall {
+    padding: 6rem 2rem;
+}
+
+.rating-summary {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.rating-summary .stars {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.review-card {
+    background: var(--surface);
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info strong {
+    display: block;
+}
+
+.user-info span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 6rem;
+    padding: 6rem 0;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-item .number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.stat-item .label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Contact Grid */
+#contact-full {
+    padding: 6rem 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+}
+
+.contact-methods {
+    margin: 3rem 0;
+}
+
+.method {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.method .icon {
+    font-size: 1.5rem;
+    background: var(--surface);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.whatsapp-card {
+    background: #e7f9ee;
+    padding: 2.5rem;
+    border-radius: 24px;
+}
+
+.whatsapp-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-wrapper {
+    background: var(--surface);
+    padding: 4rem;
+    border-radius: 32px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* Footer */
 footer {
     padding: 4rem 0;

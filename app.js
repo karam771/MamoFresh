@@ -1,5 +1,6 @@
 const canvas = document.getElementById("scroll-animation");
-const context = canvas.getContext("2d");
+if (canvas) {
+    const context = canvas.getContext("2d");
 
 const frameCount = 69;
 const currentFrame = index => (
@@ -89,3 +90,4 @@ window.addEventListener('scroll', () => {
 images[0].onload = () => {
     render();
 };
+}
