@@ -566,7 +566,7 @@ header.scrolled .logo {
 .partners-logo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 4.5rem 3rem; /* Increased vertical gap */
     align-items: center;
     justify-items: center;
     margin-top: 3rem;
@@ -630,7 +630,7 @@ footer {
 @media (max-width: 768px) {
     .partners-logo-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 1.5rem;
+        gap: 3.5rem 1.5rem; /* Increased vertical gap on mobile */
     }
     .partner-image {
         max-width: 140px;
