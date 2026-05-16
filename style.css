@@ -125,7 +125,7 @@ header.scrolled .logo img {
 
 /* Hero Section */
 #hero {
-    height: 250vh; /* Reduced from 450vh for a faster transition */
+    height: 220vh; /* Further reduced to 220vh for perfect pacing */
     position: relative;
 }
 
