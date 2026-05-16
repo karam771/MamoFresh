@@ -597,7 +597,7 @@ header.scrolled .logo {
     align-items: center;
     gap: 4rem;
     padding-right: 4rem; /* Match gap for seamless loop */
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 12s linear infinite;
 }
 
 .partners-track:hover {
