@@ -602,6 +602,24 @@ header.scrolled .logo {
     }
 }
 
+/* Home CTA Section */
+#cta-home {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 4rem 2rem;
+    background-color: var(--surface);
+    border-radius: 20px;
+}
+
+#cta-home h2 {
+    margin-bottom: 1rem;
+}
+
+#cta-home p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
 /* Footer */
 footer {
     padding: 4rem 0;
@@ -639,6 +657,11 @@ footer {
 
     .grid-2, .contact-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    #cta-home {
+        margin-top: 5rem;
+        padding: 3rem 1.5rem;
     }
     
     .nav-links {
