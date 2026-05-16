@@ -155,7 +155,9 @@ header.scrolled .logo img {
     width: 100%;
     padding: 0 2rem;
     pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 .hero-content * {

@@ -62,15 +62,14 @@ if (canvas) {
             Math.floor(progress * frameCount)
         );
 
-        // Text Sync (Fade out and scale up slightly as we scroll down)
-        // We want the text to disappear around 40% of the way through the scroll
-        const textProgress = Math.min(1, progress / 0.4);
-        if (heroContent) {
-            heroContent.style.opacity = 1 - textProgress;
-            heroContent.style.transform = `translate(-50%, calc(-50% - ${textProgress * 50}px)) scale(${1 + textProgress * 0.1})`;
-        }
-
         requestAnimationFrame(() => {
+            // Text Sync (Fade out and scale up slightly as we scroll down)
+            const textProgress = Math.min(1, progress / 0.4);
+            if (heroContent) {
+                heroContent.style.opacity = 1 - textProgress;
+                heroContent.style.transform = `translate3d(-50%, calc(-50% - ${textProgress * 50}px), 0) scale(${1 + textProgress * 0.1})`;
+            }
+            
             airbnb.frame = frameIndex;
             render();
         });
