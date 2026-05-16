@@ -58,13 +58,18 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
 }
 
-.logo span {
-    color: var(--secondary);
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: var(--transition);
+}
+
+header.scrolled .logo img {
+    height: 45px;
 }
 
 .nav-links {
@@ -120,7 +125,7 @@ nav {
 
 /* Hero Section */
 #hero {
-    height: 300vh; /* Extended for scroll animation */
+    height: 450vh; /* More space for scroll effects */
     position: relative;
 }
 
@@ -136,18 +141,25 @@ nav {
 #scroll-animation {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
+    display: block;
 }
 
 .hero-content {
-    position: sticky;
+    position: fixed;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
     color: var(--white);
     text-align: center;
-    max-width: 800px;
+    width: 100%;
+    padding: 0 2rem;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content * {
+    pointer-events: auto;
 }
 
 #hero h1 {
@@ -155,6 +167,11 @@ nav {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 700;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+#hero h1 span {
+    color: var(--secondary);
 }
 
 #hero p {
@@ -581,6 +598,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    opacity: 0.8;
 }
 
 .footer-links a {
