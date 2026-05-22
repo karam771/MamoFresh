@@ -3,10 +3,19 @@ if (canvas) {
     const context = canvas.getContext("2d");
     const heroContent = document.querySelector('.hero-content');
 
-    const frameCount = 50; // Further reduced for maximum snappiness
-    const currentFrame = index => (
-        `frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
-    );
+    // Detect if we are on a mobile screen to load optimized mobile assets
+    const isMobile = window.innerWidth <= 768;
+
+    const frameCount = 50; // Keep it at 50 for extreme snappiness on both mobile and desktop
+    const currentFrame = index => {
+        if (isMobile) {
+            // New HD mobile frames: 01.png to 50.png
+            return `frames_mobil/${index.toString().padStart(2, '0')}.png`;
+        } else {
+            // Desktop frames: ezgif-frame-001.jpg to ezgif-frame-050.jpg
+            return `frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+        }
+    };
 
     const images = [];
     const airbnb = {
