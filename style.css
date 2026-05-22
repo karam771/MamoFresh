@@ -821,6 +821,13 @@ footer {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+    #hero {
+        height: 600vh; /* Significantly increase mobile scroll length for premium pacing */
+    }
+    .animation-container {
+        /* First frame as CSS background = always visible immediately, zero JS dependency */
+        background: url('frames_mobil/02.png') center center / cover no-repeat #000;
+    }
     .creative-services-grid {
         grid-template-columns: 1fr;
     }
