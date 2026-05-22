@@ -6,7 +6,7 @@ if (canvas) {
     // Detect if we are on a mobile screen to load optimized mobile assets
     const isMobile = window.innerWidth <= 768;
 
-    const frameCount = 59; 
+    const frameCount = 69; 
     const currentFrame = index => {
         if (isMobile) {
             // New HD mobile frames: 02.png to 70.png
