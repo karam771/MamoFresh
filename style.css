@@ -822,7 +822,7 @@ footer {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     #hero {
-        height: 600vh; /* Significantly increase mobile scroll length for premium pacing */
+        height: 350vh; /* Reduced from 600vh so the next section appears sooner after animation finishes */
     }
     .animation-container {
         /* First frame as CSS background = always visible immediately, zero JS dependency */
