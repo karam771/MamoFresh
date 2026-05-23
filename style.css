@@ -174,7 +174,7 @@ header.scrolled .logo {
 
 /* Hero Section */
 #hero {
-    height: 220vh; /* Further reduced to 220vh for perfect pacing */
+    height: 500vh; /* Increased to 500vh to slow down the 161 desktop frames and make scrolling less sensitive */
     position: relative;
 }
 
