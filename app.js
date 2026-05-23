@@ -6,14 +6,14 @@ if (canvas) {
     // Detect if we are on a mobile screen to load optimized mobile assets
     const isMobile = window.innerWidth <= 768;
 
-    const frameCount = 56; 
+    const frameCount = isMobile ? 56 : 161; 
     const currentFrame = index => {
         if (isMobile) {
             // New optimized mobile frames
             return `frames_mobil/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
         } else {
-            // Desktop frames
-            return `frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+            // Desktop frames (.webp)
+            return `frames/ezgif-frame-${index.toString().padStart(3, '0')}.webp`;
         }
     };
 

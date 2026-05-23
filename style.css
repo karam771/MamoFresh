@@ -184,7 +184,7 @@ header.scrolled .logo {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: #000;
+    background: url('frames/ezgif-frame-001.webp') center center / cover no-repeat #000;
 }
 
 #scroll-animation {
