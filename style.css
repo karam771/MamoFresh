@@ -826,7 +826,7 @@ footer {
     }
     .animation-container {
         /* First frame as CSS background = always visible immediately, zero JS dependency */
-        background: url('frames_mobil/ezgif-frame-001.jpg') center center / cover no-repeat #000;
+        background: url('frames_mobil/ezgif-frame-001.webp') center center / cover no-repeat #000;
     }
     .creative-services-grid {
         grid-template-columns: 1fr;
