@@ -611,10 +611,24 @@ header.scrolled .logo {
     text-align: center;
 }
 
-/* Partners Grid Layout (2 columns, 3 rows) */
+/* Featured Partner Logo (centered above grid) */
+.partner-featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.partner-featured-logo {
+    max-width: 220px;
+    max-height: 100px;
+}
+
+/* Partners Grid Layout */
 .partners-logo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 4.5rem 3rem; /* Increased vertical gap */
     align-items: center;
     justify-items: center;
