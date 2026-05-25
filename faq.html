@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über uns | MamoFresh Reinigungsservice</title>
+    <title>FAQ | MamoFresh Reinigungsservice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-category {
+            margin-bottom: 4rem;
+        }
+        .faq-category h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--surface);
+            padding-bottom: 0.5rem;
+        }
+        .faq-item {
+            background: var(--surface);
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        .faq-item[open] {
+            background: var(--white);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-color: rgba(16, 185, 129, 0.2);
+        }
+        .faq-item summary {
+            padding: 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            color: var(--text);
+        }
+        /* Hide default browser marker */
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.6rem;
+            color: var(--secondary);
+            transition: transform 0.3s ease;
+            font-weight: 300;
+        }
+        .faq-item[open] summary::after {
+            transform: rotate(45deg);
+        }
+        .faq-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+    </style>
 </head>
 <body>
     <header id="main-header" class="scrolled">
@@ -36,23 +93,98 @@
             </div>
         </section>
 
-        <section id="faq-content" class="container" style="padding: 4rem 0;">
-            <div class="faq-list">
-                <h2>Fragen & Antworten</h2>
-                <p>Hier finden Sie bald unsere häufigsten Fragen und Antworten.</p>
-            </div>
-        </section>
+        <section id="faq-content" class="container" style="padding: 6rem 2rem; max-width: 850px; margin: 0 auto;">
+            
+            <!-- Category 1 -->
+            <div class="faq-category">
+                <h2>1. Allgemeines & Leistungen</h2>
+                
+                <details class="faq-item">
+                    <summary>Welche Arten von Gewerbeflächen reinigen Sie?</summary>
+                    <div class="faq-content">
+                        <p>Wir reinigen eine Vielzahl von Objekten, unter anderem klassische Büro- und Gewerbeflächen, Einzelhandelsgeschäfte, Sport- und Fitnessstudios, medizinische Praxen sowie Kitas und Schulen. Jedes Objekt hat eigene Anforderungen, auf die wir uns flexibel einstellen.</p>
+                    </div>
+                </details>
 
-        <section id="about-partners" class="container">
-            <h2 class="section-title">Starke Partner an unserer Seite</h2>
-            <div class="partners-logo-grid">
-                <img src="assets/fitone-logo.png" alt="FitOne" class="partner-image">
-                <img src="assets/fitnessfirst-logo.png" alt="Fitness First" class="partner-image">
-                <img src="assets/easyfitness-logo.png" alt="EasyFitness" class="partner-image dark-bg-logo">
-                <img src="assets/benefit-logo.png" alt="Benefit Fitness" class="partner-image">
-                <img src="assets/telekom-logo.png" alt="Telekom" class="partner-image">
-                <img src="assets/vodafone-logo.png" alt="Vodafone" class="partner-image">
+                <details class="faq-item">
+                    <summary>Bieten Sie auch einmalige Sonderreinigungen an?</summary>
+                    <div class="faq-content">
+                        <p>Ja. Neben der regelmäßigen Unterhaltsreinigung (z. B. wöchentlich oder täglich) können Sie uns auch für einmalige Einsätze buchen – etwa nach Renovierungen, für eine intensive Grundreinigung oder für die Glas- und Fensterreinigung.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Reinigen Sie auch außerhalb der regulären Geschäftszeiten?</summary>
+                    <div class="faq-content">
+                        <p>Selbstverständlich. Um Ihren Betriebsablauf nicht zu stören, arbeiten wir hochflexibel. Die Reinigung kann frühmorgens vor Geschäftsöffnung, abends nach Feierabend oder am Wochenende erfolgen.</p>
+                    </div>
+                </details>
             </div>
+
+            <!-- Category 2 -->
+            <div class="faq-category">
+                <h2>2. Ablauf & Organisation</h2>
+
+                <details class="faq-item">
+                    <summary>Arbeitet immer dasselbe Reinigungspersonal bei uns?</summary>
+                    <div class="faq-content">
+                        <p>Ja, wir setzen auf das Festpersonal-Prinzip. Für Ihr Objekt wird ein festes Team eingeteilt. Das schafft Vertrauen, sorgt für Konstanz in der Qualität und die Mitarbeiter kennen die spezifischen Gegebenheiten vor Ort nach kurzer Zeit in- und auswendig. Im Urlaubs- oder Krankheitsfall stellen wir eine qualifizierte Vertretung.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Wie läuft die Schlüsselübergabe ab?</summary>
+                    <div class="faq-content">
+                        <p>Die Schlüsselübergabe wird vertraglich und haftungsrechtlich dokumentiert. Ihre Schlüssel werden bei uns absolut sicher und anonymisiert aufbewahrt. Alternativ reinigen wir natürlich auch während Ihrer Präsenzzeiten, sodass kein Schlüssel nötig ist.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="faq-category">
+                <h2>3. Vertrauen, Sicherheit & Qualität</h2>
+
+                <details class="faq-item">
+                    <summary>Was passiert, wenn mal etwas beschädigt wird?</summary>
+                    <div class="faq-content">
+                        <p>Trotz größter Sorgfalt kann theoretisch mal ein Missgeschick passieren. Für diesen Fall ist unser Unternehmen umfassend haftpflichtversichert. Schäden werden von uns umgehend gemeldet und unkompliziert reguliert.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Wie sichern Sie die Qualität der Reinigung?</summary>
+                    <div class="faq-content">
+                        <p>Qualität ist kein Zufall. Wir arbeiten mit festen Checklisten, die auf Ihr Objekt zugeschnitten sind. Zudem führen unsere Objektleiter regelmäßige, unangekündigte Qualitätskontrollen durch. Sie haben außerdem jederzeit einen festen Ansprechpartner für Feedback oder kurzfristige Änderungen.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Werden die gesetzlichen Vorgaben (z. B. Mindestlohn, BG) eingehalten?</summary>
+                    <div class="faq-content">
+                        <p>Absolut. Als seriöser Fachbetrieb distanzieren wir uns von Schwarzarbeit und Lohndumping. Alle unsere Mitarbeiter sind ordnungsgemäß angemeldet, unfallversichert und werden fair nach Tarif bezahlt. Das gibt auch Ihnen als Auftraggeber rechtliche Sicherheit.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="faq-category">
+                <h2>4. Preise & Vertrag</h2>
+
+                <details class="faq-item">
+                    <summary>Wie wird der Preis für die Reinigung kalkuliert?</summary>
+                    <div class="faq-content">
+                        <p>Der Preis richtet sich nach der Größe der Fläche, der Art der Nutzung, dem Verschmutzungsgrad und der gewünschten Häufigkeit. Nach einer kostenlosen Erstbesichtigung erstellen wir Ihnen ein unverbindliches, transparentes Festpreis-Angebot ohne versteckte Kosten.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Gibt es lange Vertragslaufzeiten?</summary>
+                    <div class="faq-content">
+                        <p>Wir möchten Sie durch Leistung überzeugen, nicht durch Knebelverträge. Wir bieten flexible Vertragslaufzeiten mit fairen Kündigungsfristen an, die individuell im Servicevertrag vereinbart werden.</p>
+                    </div>
+                </details>
+            </div>
+
         </section>
     </main>
 
