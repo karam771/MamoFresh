@@ -236,6 +236,16 @@ header.scrolled .logo {
     justify-content: center;
 }
 
+#hero .btn-secondary {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+#hero .btn-secondary:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
 /* Animations */
 .fade-in {
     opacity: 0;
