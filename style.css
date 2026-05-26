@@ -319,21 +319,77 @@ header.scrolled .logo {
     align-items: center;
 }
 
-.features-list {
-    list-style: none;
-    margin-top: 2rem;
+.why-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
-.features-list li {
-    margin-bottom: 1.5rem;
+.why-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(46, 204, 113, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(46, 204, 113, 0.1);
+}
+
+.why-card:hover::before {
+    opacity: 1;
+}
+
+.why-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.15), rgba(46, 204, 113, 0.05));
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--secondary);
+    transition: all 0.4s ease;
 }
 
-.features-list strong {
-    color: var(--secondary);
-    font-size: 1.1rem;
-    margin-bottom: 0.25rem;
+.why-card:hover .why-card-icon {
+    background: linear-gradient(135deg, var(--secondary), rgba(46, 204, 113, 0.7));
+    color: var(--white);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(46, 204, 113, 0.3);
+}
+
+.why-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+}
+
+.why-card-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.6;
 }
 
 /* Contact */
@@ -946,5 +1002,20 @@ footer {
     
     .contact-wrapper {
         padding: 2rem;
+    }
+
+    .why-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .why-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-cards-grid {
+        grid-template-columns: 1fr;
     }
 }
