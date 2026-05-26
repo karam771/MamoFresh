@@ -74,28 +74,35 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <!-- Web3Forms Access Key will be placed here -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        
                         <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Ihr Name" required>
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Ihr Name" required>
                         </div>
                         <div class="form-group">
-                            <label>E-Mail Adresse</label>
-                            <input type="email" placeholder="ihre@email.de" required>
+                            <label for="form-email">E-Mail Adresse</label>
+                            <input type="email" id="form-email" name="email" placeholder="ihre@email.de" required>
                         </div>
                         <div class="form-group">
-                            <label>Betreff</label>
-                            <select>
+                            <label for="form-subject">Betreff</label>
+                            <select id="form-subject" name="subject" required>
                                 <option value="">Grund der Anfrage</option>
-                                <option value="offer">Angebot anfordern</option>
-                                <option value="question">Allgemeine Frage</option>
-                                <option value="job">Bewerbung</option>
+                                <option value="Angebot anfordern">Angebot anfordern</option>
+                                <option value="Allgemeine Frage">Allgemeine Frage</option>
+                                <option value="Bewerbung">Bewerbung</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Nachricht</label>
-                            <textarea rows="6" placeholder="Wie können wir Ihnen helfen?"></textarea>
+                            <label for="form-message">Nachricht</label>
+                            <textarea id="form-message" name="message" rows="6" placeholder="Wie können wir Ihnen helfen?" required></textarea>
                         </div>
+                        
+                        <!-- Spamschutz Honeypot -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
                         <button type="submit" class="btn-primary">Anfrage senden</button>
                     </form>
                 </div>
