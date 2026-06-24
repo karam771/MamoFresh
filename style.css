@@ -623,6 +623,12 @@ header.scrolled .logo {
     padding: 6rem 2rem;
 }
 
+/* Mobile-only contact choice elements — hidden on desktop */
+.mobile-reach-heading,
+.mobile-choice-badge {
+    display: none;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -1020,6 +1026,66 @@ footer {
 
     .whatsapp-card {
         padding: 1.5rem;
+    }
+
+    /* Show mobile-only elements */
+    .mobile-reach-heading {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    .mobile-reach-heading h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .mobile-reach-heading p {
+        color: var(--text-light);
+        font-size: 0.95rem;
+    }
+
+    /* Hide the desktop heading on mobile (replaced by mobile-reach-heading) */
+    .contact-details > h2,
+    .contact-details > p {
+        display: none;
+    }
+
+    .mobile-choice-badge {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 14px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .mobile-choice-badge strong {
+        display: block;
+        font-size: 1.05rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .mobile-choice-badge span:not(.choice-icon) {
+        color: rgba(0,0,0,0.5);
+        font-size: 0.88rem;
+    }
+
+    .choice-icon {
+        font-size: 1.8rem;
+        flex-shrink: 0;
+    }
+
+    .mobile-choice-wa {
+        background: #e7f9ee;
+        border: 2px solid #a8e6be;
+    }
+
+    .mobile-choice-form {
+        background: var(--surface);
+        border: 2px solid rgba(26, 43, 76, 0.15);
     }
 
     .why-cards-grid {
