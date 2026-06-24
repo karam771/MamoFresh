@@ -1070,7 +1070,7 @@ footer {
     }
 
     .whatsapp-card {
-        padding: 1.5rem;
+        display: none;
     }
 
     /* Show mobile-only elements */
@@ -1105,6 +1105,14 @@ footer {
         padding: 1rem 1.25rem;
         margin-bottom: 1.25rem;
         font-size: 0.95rem;
+        text-decoration: none;
+        color: var(--text);
+        transition: all 0.25s ease;
+    }
+
+    a.mobile-choice-badge.mobile-choice-wa:active {
+        background: #d1f2dc;
+        transform: scale(0.98);
     }
 
     .mobile-choice-badge strong {
