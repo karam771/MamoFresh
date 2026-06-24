@@ -937,6 +937,51 @@ footer {
     .creative-services-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Services page – mobile */
+    .service-detail-block {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 2rem 0;
+    }
+
+    /* Reset the RTL trick that breaks mobile layout */
+    .service-detail-block.reverse {
+        direction: ltr;
+    }
+
+    /* Hide images on mobile */
+    .service-image {
+        display: none;
+    }
+
+    /* Style each block as a clean card with green left accent */
+    .service-text {
+        background: var(--surface);
+        border-radius: 20px;
+        border-left: 4px solid var(--secondary);
+        padding: 2rem 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-text h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .service-text p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-text li {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #detailed-services {
+        padding: 2rem 1rem;
+    }
     .c-service-card {
         padding: 2rem;
         min-height: auto;
