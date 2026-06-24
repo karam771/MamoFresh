@@ -645,6 +645,10 @@ header.scrolled .logo {
     margin-bottom: 2rem;
 }
 
+.method:last-child {
+    margin-bottom: 0;
+}
+
 .method .icon {
     font-size: 1.5rem;
     background: var(--surface);
@@ -1057,7 +1061,11 @@ footer {
 
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 1.25rem;
+    }
+
+    .contact-methods {
+        margin: 1.5rem 0 1rem 0;
     }
 
     .contact-form-wrapper {
