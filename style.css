@@ -1102,28 +1102,23 @@ footer {
         align-items: center;
         gap: 1rem;
         border-radius: 14px;
-        padding: 1rem 1.25rem;
+        padding: 1.1rem 1.3rem;
         margin-bottom: 1.25rem;
         font-size: 0.95rem;
         text-decoration: none;
-        color: var(--text);
         transition: all 0.25s ease;
     }
 
     a.mobile-choice-badge.mobile-choice-wa:active {
-        background: #d1f2dc;
+        background: #e1f7ea;
         transform: scale(0.98);
     }
 
     .mobile-choice-badge strong {
         display: block;
         font-size: 1.05rem;
-        margin-bottom: 0.15rem;
-    }
-
-    .mobile-choice-badge span:not(.choice-icon) {
-        color: rgba(0,0,0,0.5);
-        font-size: 0.88rem;
+        margin-bottom: 0.2rem;
+        font-weight: 600;
     }
 
     .choice-icon {
@@ -1132,13 +1127,33 @@ footer {
     }
 
     .mobile-choice-wa {
-        background: #e7f9ee;
-        border: 2px solid #a8e6be;
+        background: #f4fdf8;
+        border: 1px solid #c3f2d5;
+        box-shadow: 0 2px 8px rgba(37, 211, 102, 0.04);
+    }
+    
+    .mobile-choice-wa strong {
+        color: #0f5132;
+    }
+    
+    .mobile-choice-wa span:not(.choice-icon) {
+        color: #198754;
+        font-size: 0.88rem;
     }
 
     .mobile-choice-form {
-        background: var(--surface);
-        border: 2px solid rgba(26, 43, 76, 0.15);
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+    
+    .mobile-choice-form strong {
+        color: #1e293b;
+    }
+    
+    .mobile-choice-form span:not(.choice-icon) {
+        color: #64748b;
+        font-size: 0.88rem;
     }
 
     .why-cards-grid {
