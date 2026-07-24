@@ -199,7 +199,6 @@ header.scrolled .logo {
     position: sticky;
     top: 0;
     height: 100vh;
-    height: 100dvh;
     width: 100%;
     overflow: hidden;
     background: url('frames/ezgif-frame-001.webp') center center / cover no-repeat #000;
@@ -970,6 +969,27 @@ footer {
         /* First frame as CSS background = always visible immediately, zero JS dependency */
         background: url('frames_mobil/ezgif-frame-001.webp') center center / cover no-repeat #000;
     }
+    
+    /* Mobile Footer Layout */
+    .footer-content {
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .footer-logo img {
+        height: 80px;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        width: 100%;
+    }
+    .footer-links a {
+        margin-left: 0;
+    }
+    
     .creative-services-grid {
         grid-template-columns: 1fr;
     }
