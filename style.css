@@ -201,7 +201,7 @@ header.scrolled .logo {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url('frames/ezgif-frame-001.webp') center center / cover no-repeat #000;
+    background: url('frames/ezgif-frame-001.webp') center center / cover no-repeat;
 }
 
 #scroll-animation {
@@ -967,7 +967,7 @@ footer {
     }
     .animation-container {
         /* First frame as CSS background = always visible immediately, zero JS dependency */
-        background: url('frames_mobil/ezgif-frame-001.webp') center center / cover no-repeat #000;
+        background: url('frames_mobil/ezgif-frame-001.webp') center center / cover no-repeat;
     }
     
     /* Mobile Footer Layout */
