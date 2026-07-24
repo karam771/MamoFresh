@@ -72,14 +72,14 @@ nav {
 }
 
 .logo-img {
-    height: 60px;
+    height: 75px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
 }
 
 header.scrolled .logo-img {
-    height: 46px;
+    height: 55px;
 }
 
 header.scrolled .logo {
@@ -808,9 +808,9 @@ footer {
 }
 
 .footer-logo img {
-    height: 55px;
+    height: 95px;
     width: auto;
-    opacity: 0.8;
+    opacity: 0.95;
 }
 
 .footer-links a {
@@ -1213,10 +1213,10 @@ footer {
         font-size: 1.05rem;
     }
     .logo-img {
-        height: 40px;
+        height: 48px;
     }
     header.scrolled .logo-img {
-        height: 34px;
+        height: 40px;
     }
 }
 
