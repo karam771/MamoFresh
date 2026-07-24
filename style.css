@@ -58,6 +58,9 @@ nav {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -66,6 +69,17 @@ nav {
 
 .logo span {
     color: var(--secondary);
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+header.scrolled .logo-img {
+    height: 32px;
 }
 
 header.scrolled .logo {
@@ -1197,6 +1211,12 @@ footer {
     }
     header.scrolled .logo {
         font-size: 1.05rem;
+    }
+    .logo-img {
+        height: 32px;
+    }
+    header.scrolled .logo-img {
+        height: 28px;
     }
 }
 
