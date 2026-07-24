@@ -67,12 +67,12 @@ nav {
     transition: var(--transition);
 }
 
-.logo span {
+.logo-text span {
     color: var(--secondary);
 }
 
 .logo-img {
-    height: 48px;
+    height: 46px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
