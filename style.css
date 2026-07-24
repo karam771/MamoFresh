@@ -72,14 +72,14 @@ nav {
 }
 
 .logo-img {
-    height: 40px;
+    height: 48px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
 }
 
 header.scrolled .logo-img {
-    height: 32px;
+    height: 36px;
 }
 
 header.scrolled .logo {
