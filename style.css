@@ -178,6 +178,7 @@ header.scrolled .logo {
     color: var(--white);
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    text-decoration: none;
 }
 
 .nav-cta:hover {
@@ -193,15 +194,18 @@ header.scrolled .logo {
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
     font-weight: 600;
+    text-decoration: none;
     transition: var(--transition);
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 
 .btn-cta {
     background: var(--secondary);
     padding: 1rem 2rem;
     font-size: 1.1rem;
+    text-decoration: none;
 }
 
 .btn-secondary {
