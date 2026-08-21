@@ -1,13 +1,44 @@
 :root {
     --primary: #0f172a;
-    --secondary: #10b981;
+    --secondary: #047857; /* Darker emerald green for WCAG AA contrast compliance */
     --accent: #3b82f6;
     --background: #ffffff;
     --surface: #f8fafc;
     --text: #1e293b;
-    --text-light: #64748b;
+    --text-light: #52637a; /* Darker slate gray for WCAG AA contrast compliance */
     --white: #ffffff;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Skip Link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    background: var(--primary);
+    color: var(--white) !important;
+    padding: 0.8rem 1.5rem;
+    z-index: 99999;
+    transition: top 0.2s ease;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.skip-link:focus-visible {
+    top: 0;
+}
+
+/* Focus indicator for keyboard accessibility */
+a:focus-visible, 
+button:focus-visible, 
+select:focus-visible, 
+input:focus-visible, 
+textarea:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
 }
 
 * {
